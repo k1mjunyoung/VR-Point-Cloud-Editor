@@ -659,7 +659,8 @@ public abstract class OnlineMapsControlBase : MonoBehaviour, IOnlineMapsSavableC
 
         GameObject go = hits[0].gameObject;
         if (go == gameObject) return false;
-        if (go.GetComponent<OnlineMapsMarkerInstanceBase>() != null || go.GetComponent<OnlineMapsBuildingBase>() != null) return false;
+        /*if (go.GetComponent<OnlineMapsMarkerInstanceBase>() != null || go.GetComponent<OnlineMapsBuildingBase>() != null) return false;*/
+        if (go.GetComponent<OnlineMapsMarkerInstanceBase>() != null) return false;
         if (OnValidateCursorOnUIElement != null) return OnValidateCursorOnUIElement(go);
 
         return true;

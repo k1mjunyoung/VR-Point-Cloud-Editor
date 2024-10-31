@@ -4,7 +4,7 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomPropertyDrawer(typeof(OnlineMapsBuildingMaterial))]
+/*[CustomPropertyDrawer(typeof(OnlineMapsBuildingMaterial))]*/
 public class OnlineMapsBuildingMaterialPropertyDrawer : PropertyDrawer
 {
     public static bool isRemoved = false;
